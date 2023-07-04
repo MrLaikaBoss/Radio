@@ -1,17 +1,19 @@
 public class Radio {
-    public int currentRadioStation;
-    public int numberStation = 10;
-    public int maxStation = 9;
-    public final int minStation = 0;
-    public int currentVolume;
-    public final int maxVolume = 100;
-    public final int minVolume = 0;
+    private int currentRadioStation;
+    private int numberStation = 10;
+    private int maxStation = 9;
+    private final int minStation = 0;
+    private int currentVolume;
+    private final int maxVolume = 100;
+    private final int minVolume = 0;
 
     public int getCurrentRadioStation() {
+
         return currentRadioStation;
     }
 
     public int getCurrentVolume() {
+
         return currentVolume;
     }
 
@@ -34,9 +36,7 @@ public class Radio {
             currentRadioStation = 0;
         }
 
-
     }
-
 
     public void stepBackRadioStation() {
 
@@ -71,4 +71,6 @@ public class Radio {
     }
 
 }
+
+
 

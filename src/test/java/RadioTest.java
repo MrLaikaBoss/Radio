@@ -73,7 +73,7 @@ public class RadioTest {
     public void mooveBackLessThanMinRadioStation() {
         Radio stat = new Radio();
         stat.setCurrentRadioStation(-1);
-        int expected = stat.currentRadioStation;
+        int expected = stat.getCurrentRadioStation();
         int actual = stat.getCurrentRadioStation();
 
         Assertions.assertEquals(expected, actual);
@@ -138,7 +138,7 @@ public class RadioTest {
         Radio stat = new Radio();
         stat.setCurrentVolume(10);
         stat.increaseVolume();
-        int expected = stat.currentVolume;
+        int expected = stat.getCurrentVolume();
         int actual = stat.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
@@ -162,7 +162,7 @@ public class RadioTest {
         Radio stat = new Radio();
         stat.setCurrentVolume(0);
         stat.reduceVolume();
-        int expected = stat.currentVolume;
+        int expected = stat.getCurrentVolume();
         int actual = stat.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
